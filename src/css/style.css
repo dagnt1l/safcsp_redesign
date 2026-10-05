@@ -26,14 +26,14 @@
   }
 
   .navbar {
-    @apply flex items-center container gap-7 py-5;
+    @apply container flex items-center gap-7 py-5;
 
     .title {
       @apply hover:text-primary-500 font-body! text-2xl;
     }
 
     .nav-collapse {
-      @apply bg-light-50/90 dark:lg:bg-transparent dark:bg-midnight-950/90 fixed top-full left-0 z-50 hidden w-full gap-3.5 rounded-xs p-4 lg:static lg:top-auto lg:z-auto lg:flex lg:w-auto lg:grow lg:rounded-none lg:bg-transparent lg:p-0 lg:backdrop-blur-none;
+      @apply bg-light-50/90 dark:bg-midnight-950/90 fixed top-full left-0 z-50 hidden w-full gap-3.5 rounded-xs p-4 lg:static lg:top-auto lg:z-auto lg:flex lg:w-auto lg:grow lg:rounded-none lg:bg-transparent lg:p-0 lg:backdrop-blur-none dark:lg:bg-transparent;
 
       &.show {
         @apply grid!;
@@ -54,7 +54,7 @@
 
   button,
   .button {
-    @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-xs px-3 py-2 leading-[1.2] outline-transparent transition-all select-none [&_svg]:size-4;
+    @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-xs px-3 py-2 leading-[1.2] font-medium outline-transparent transition-all select-none [&_svg]:size-4;
 
     &.sm {
       @apply gap-1.5 px-2 py-2 text-sm [&_svg]:size-4;
@@ -88,7 +88,7 @@
       @apply grid gap-3.5 p-5;
 
       .card-title {
-        @apply block text-lg transition-colors;
+        @apply block text-lg font-medium transition-colors;
       }
 
       .card-text {
