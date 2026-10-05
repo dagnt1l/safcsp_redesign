@@ -133,6 +133,23 @@
     }
   }
 
+  .marquee {
+    @apply flex w-full overflow-hidden mask-[linear-gradient(90deg,rgba(217,217,217,0)_-4.73%,#D9D9D9_17.04%,#D9D9D9_82.32%,rgba(217,217,217,0)_104.08%)];
+
+    &:hover .marquee-group {
+      animation-play-state: paused;
+    }
+
+    .marquee-group {
+      @apply flex shrink-0 items-center gap-5 pe-5;
+      animation: marquee-scroll 30s linear infinite;
+
+      img {
+        @apply size-34.5 max-w-none shrink-0;
+      }
+    }
+  }
+
   .section-title {
     @apply mb-10 text-center text-4xl;
   }
@@ -148,4 +165,26 @@
 
 @utility container {
   @apply mx-auto max-w-[unset] px-4 md:px-8 lg:px-16 xl:max-w-328;
+}
+
+@keyframes marquee-scroll {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-scroll-rtl {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+[dir='rtl'] .marquee .marquee-group {
+  animation-name: marquee-scroll-rtl;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee .marquee-group {
+    animation: none;
+  }
 }
