@@ -29,15 +29,15 @@
       <a href="#" class="title">SAFCSP</a>
       <div id="main-navbar" class="nav-collapse">
         <div class="nav-list">
-          <a href="#" class="nav-link active">Home</a>
-          <a href="#" class="nav-link">About SAFCSP</a>
-          <a href="#" class="nav-link">Initiatives</a>
-          <a href="#" class="nav-link">Platforms</a>
-          <a href="#" class="nav-link">Media center</a>
-          <a href="#" class="nav-link">Contact us</a>
+          <a href="#" class="nav-link active" data-i18n="navHome">Home</a>
+          <a href="#" class="nav-link" data-i18n="navAbout">About SAFCSP</a>
+          <a href="#" class="nav-link" data-i18n="navInitiatives">Initiatives</a>
+          <a href="#" class="nav-link" data-i18n="navPlatforms">Platforms</a>
+          <a href="#" class="nav-link" data-i18n="navMedia">Media center</a>
+          <a href="#" class="nav-link" data-i18n="navContact">Contact us</a>
         </div>
         <div class="nav-list me-auto lg:ms-auto lg:me-0">
-          <button class="nav-link font-arabic sm">
+          <button id="language-toggle" class="nav-link font-arabic sm" type="button" data-i18n="languageToggle">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M8 3C8.41421 3 8.75 3.33579 8.75 3.75V5.06665H12.25C12.6642 5.06665 13 5.40244 13 5.81665C13 6.23086 12.6642 6.56665 12.25 6.56665H11.4248C11.0845 8.68318 10.3904 10.4216 9.24913 11.7779C9.16995 11.872 9.08886 11.964 9.00585 12.0539C9.85346 12.7037 10.9016 13.1911 12.1879 13.5239C12.5889 13.6277 12.8298 14.0368 12.7261 14.4379C12.6223 14.8389 12.2132 15.0798 11.8121 14.9761C10.2577 14.5739 8.94367 13.9504 7.87142 13.0683C6.84632 13.8244 5.61619 14.3675 4.18262 14.7274C3.78088 14.8283 3.37343 14.5844 3.27257 14.1826C3.17171 13.7809 3.41563 13.3734 3.81738 13.2726C5.00169 12.9752 5.98351 12.5511 6.79235 11.9953C6.77568 11.9753 6.75909 11.9552 6.74259 11.9349C5.60291 10.5381 4.91109 8.74802 4.5729 6.56665H3.75C3.33579 6.56665 3 6.23086 3 5.81665C3 5.40244 3.33579 5.06665 3.75 5.06665H7.25V3.75C7.25 3.33579 7.58579 3 8 3ZM6.09251 6.56665C6.41346 8.45521 7.01656 9.89801 7.90481 10.9867C7.9118 10.9952 7.9188 11.0038 7.92582 11.0123C7.98573 10.9468 8.04424 10.88 8.10138 10.8121C8.98238 9.76511 9.58205 8.37972 9.90358 6.56665H6.09251ZM15.3629 10.2111C15.9329 8.70241 18.0671 8.7024 18.6371 10.2111L21.9516 18.9849C22.098 19.3724 21.9025 19.8052 21.5151 19.9515C21.1276 20.0979 20.6948 19.9025 20.5484 19.515L19.9119 17.8302C19.8321 17.8592 19.746 17.8749 19.6562 17.8749H14.3438C14.254 17.8749 14.1679 17.8592 14.0881 17.8302L13.4516 19.515C13.3052 19.9025 12.8724 20.0979 12.4849 19.9515C12.0975 19.8052 11.902 19.3724 12.0484 18.9849L15.3629 10.2111ZM14.6378 16.3749H19.3622L17.2339 10.7412C17.1524 10.5257 16.8476 10.5257 16.7661 10.7412L14.6378 16.3749Z" fill="black" />
             </svg>
@@ -63,10 +63,10 @@
       <div class="mx-auto grid max-w-328 justify-center gap-17.5 lg:flex lg:items-center">
         <!-- Texts -->
         <div class="w-full">
-          <h1 class="text-4xl lg:text-5xl">Building the Kingdom's Digital and Aerial Future</h1>
-          <p class="text-dimmed mt-2 text-lg lg:text-xl">We empower Saudi talent with world-class skills in cybersecurity, software development, drones, and emerging technologies.</p>
+          <h1 class="text-4xl lg:text-5xl" data-i18n="heroTitle">Building the Kingdom's Digital and Aerial Future</h1>
+          <p class="text-dimmed mt-2 text-lg lg:text-xl" data-i18n="heroDescription">We empower Saudi talent with world-class skills in cybersecurity, software development, drones, and emerging technologies.</p>
           <button class="primary mt-7">
-            See more
+            <span data-i18n="seeMore">See more</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2929 5.29289C13.6834 4.90237 14.3166 4.90237 14.7071 5.29289L20.7071 11.2929C20.8946 11.4804 21 11.7348 21 12C21 12.2652 20.8946 12.5196 20.7071 12.7071L14.7071 18.7071C14.3166 19.0976 13.6834 19.0976 13.2929 18.7071C12.9024 18.3166 12.9024 17.6834 13.2929 17.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L13.2929 6.70711C12.9024 6.31658 12.9024 5.68342 13.2929 5.29289Z" fill="black" />
             </svg>
@@ -81,30 +81,30 @@
               <button class="action-button minimize"></button>
               <button class="action-button full-screen-toggler"></button>
             </div>
-            <span class="title">Terminal emulator</span>
+            <span class="title" data-i18n="terminalTitle">Terminal emulator</span>
           </div>
           <div class="content">
             <p class="text-xs leading-4.25">
-              Microsoft Windows
+              <span data-i18n="terminalWindows">Microsoft Windows</span>
               <br />
               <br />
-              (c) Microsoft Corporation. جميع الحقوق محفوظة.
+              <span data-i18n="terminalCopyright">(c) Microsoft Corporation. All rights reserved.</span>
               <br />
               <br />
-              C:\Users\saad_aljuhani> video_play ./video/info_vid.mp4
+              <span data-i18n="terminalCommand">C:\Users\saad_aljuhani&gt; video_play ./video/info_vid.mp4</span>
               <br />
               <br />
-              Welcome to SAFCSP information video
+              <span data-i18n="terminalWelcome">Welcome to SAFCSP information video</span>
               <br />
-              Here, you’ll learn about SAFCSP
+              <span data-i18n="terminalLearn">Here, you’ll learn about SAFCSP</span>
               <br />
               <br />
-              Loading complete
+              <span data-i18n="terminalComplete">Loading complete</span>
             </p>
-            <button class="bg-light-100 xs hover:bg-light-200 text-midnight-950 font-terminal me-auto mt-3.5">Play video</button>
+            <button class="bg-light-100 xs hover:bg-light-200 text-midnight-950 font-terminal me-auto mt-3.5" data-i18n="playVideo">Play video</button>
             <div class="mt-5 flex items-center *:text-xs">
               <span>C:\Users\saad_aljuhani></span>
-              <input type="text" class="overflow-auto border-none bg-transparent px-1 outline-none [caret-shape:block]" />
+              <input type="text" class="overflow-auto border-none bg-transparent px-1 outline-none [caret-shape:block]" data-i18n-placeholder="terminalInput" />
             </div>
           </div>
         </div>
@@ -115,7 +115,7 @@
 
     <!-- Safcsp in numbers -->
     <section class="container pt-36">
-      <h1 class="section-title">SAFCSP in Numbers</h1>
+      <h1 class="section-title" data-i18n="numbersTitle">SAFCSP in Numbers</h1>
       <div class="grid grid-cols-1 gap-7 lg:grid-cols-3">
         <div class="card group **:transition-colors">
           <div class="content flex items-center gap-5 p-3.5">
@@ -126,7 +126,7 @@
               </svg>
             </span>
             <div class="grid gap-2">
-              <span class="card-text text-sm">Trainees</span>
+              <span class="card-text text-sm" data-i18n="trainees">Trainees</span>
               <span class="card-title text-xl">+3,200</span>
             </div>
           </div>
@@ -144,7 +144,7 @@
               </svg>
             </span>
             <div class="grid gap-2">
-              <span class="card-text text-sm">Events</span>
+              <span class="card-text text-sm" data-i18n="events">Events</span>
               <span class="card-title text-xl">+240</span>
             </div>
           </div>
@@ -157,7 +157,7 @@
               </svg>
             </span>
             <div class="grid gap-2">
-              <span class="card-text text-sm">Training courses</span>
+              <span class="card-text text-sm" data-i18n="trainingCourses">Training courses</span>
               <span class="card-title text-xl">+154</span>
             </div>
           </div>
@@ -168,7 +168,7 @@
 
     <!-- Safcsp platforms -->
     <section id="platforms" class="container pt-36">
-      <h1 class="section-title">SAFCSP platforms</h1>
+      <h1 class="section-title" data-i18n="platformsTitle">SAFCSP platforms</h1>
       <div class="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-4">
         <div class="card group">
           <div class="card-img z-10 grid">
@@ -188,7 +188,7 @@
           </div>
           <div class="content gap-0">
             <a href="#" class="card-title hover:text-primary-500">Coderhub</a>
-            <p class="card-text mt-1">The platform teaches the core concepts of programming so learners can understand the topics clearly.</p>
+            <p class="card-text mt-1" data-i18n="coderhubDescription">The platform teaches the core concepts of programming so learners can understand the topics clearly.</p>
           </div>
         </div>
 
@@ -210,7 +210,7 @@
           </div>
           <div class="content gap-0">
             <a href="#" class="card-title hover:text-primary-500">Cyberhub</a>
-            <p class="card-text mt-1">An initiative to develop the potential students and support students clubs establishment in the Cybersecurity field in Saudi universities</p>
+            <p class="card-text mt-1" data-i18n="cyberhubDescription">An initiative to develop the potential students and support students clubs establishment in the Cybersecurity field in Saudi universities</p>
           </div>
         </div>
 
@@ -232,7 +232,7 @@
           </div>
           <div class="content gap-0">
             <a href="#" class="card-title hover:text-primary-500">Satr</a>
-            <p class="card-text mt-1">Satr offers free, Arabic-first courses and learning paths for people who want to learn technology skills, from beginners to specialists. Topics include programming, app development (web, Android, iOS), cybersecurity, artificial intelligence and data science. The platform also provides programming books, bootcamps and challenges, and promotes self-paced, interactive learning as a national initiative.</p>
+            <p class="card-text mt-1" data-i18n="satrDescription">Satr offers free, Arabic-first courses and learning paths for people who want to learn technology skills, from beginners to specialists. Topics include programming, app development (web, Android, iOS), cybersecurity, artificial intelligence and data science. The platform also provides programming books, bootcamps and challenges, and promotes self-paced, interactive learning as a national initiative.</p>
           </div>
         </div>
         <!--  -->
@@ -254,7 +254,7 @@
           </div>
           <div class="content gap-0">
             <a href="#" class="card-title hover:text-primary-500">Bug bounty</a>
-            <p class="card-text mt-1">Utilizing the outstanding skills of cybersecurity researchers in discovering software vulnerabilities; for safe and reliable cyberspace</p>
+            <p class="card-text mt-1" data-i18n="bugBountyDescription">Utilizing the outstanding skills of cybersecurity researchers in discovering software vulnerabilities; for safe and reliable cyberspace</p>
           </div>
         </div>
       </div>
@@ -263,16 +263,16 @@
 
     <!-- Success partners -->
     <section id="partners" class="container pt-36">
-      <h1 class="section-title">Success partners</h1>
+      <h1 class="section-title" data-i18n="partnersTitle">Success partners</h1>
       <div class="flex items-center gap-5"></div>
     </section>
     <!-- Success partners -->
 
     <!-- Latest news -->
     <section id="latest-news" class="container pt-36">
-      <h1 class="section-title">Latest news</h1>
+      <h1 class="section-title" data-i18n="newsTitle">Latest news</h1>
       <div class="border-midnight-950/10 dark:border-light-50/10 grid h-32 w-full place-content-center border border-dashed">
-        <span class="text-dimmed text-lg">There’s no news here</span>
+        <span class="text-dimmed text-lg" data-i18n="noNews">There’s no news here</span>
       </div>
     </section>
     <!-- Latest news -->
@@ -290,30 +290,31 @@
         <!-- End side -->
         <div class="grid gap-9 lg:flex">
           <div class="*:block [&_a]:not-last:mb-2">
-            <p class="text-midnight-950 dark:text-light-100 mb-4">Platforms:</p>
+            <p class="text-midnight-950 dark:text-light-100 mb-4" data-i18n="footerPlatforms">Platforms:</p>
             <a href="https://satr.tuwaiq.edu.sa/" target="_blank" class="text-dimmed hover:text-midnight-950 dark:hover:text-light-100">Satr</a>
             <a href="https://coderhub.tuwaiq.edu.sa/" target="_blank" class="text-dimmed hover:text-midnight-950 dark:hover:text-light-100">CoderHub</a>
             <a href="https://bugbounty.sa/" target="_blank" class="text-dimmed hover:text-midnight-950 dark:hover:text-light-100">BugBounty</a>
           </div>
           <div class="*:block [&_a]:not-last:mb-2">
-            <p class="text-midnight-950 dark:text-light-100 mb-4">About Saad Al Juhani:</p>
+            <p class="text-midnight-950 dark:text-light-100 mb-4" data-i18n="footerAboutSaad">About Saad Al Juhani:</p>
             <a href="https://x.com/dagnt2l" target="_blank" class="text-dimmed hover:text-midnight-950 dark:hover:text-light-100">X.com</a>
             <a href="https://linkedin.com/in/saadaljuhani" target="_blank" class="text-dimmed hover:text-midnight-950 dark:hover:text-light-100">LinkedIn</a>
             <a href="https://www.behance.net/dagnt1l" target="_blank" class="text-dimmed hover:text-midnight-950 dark:hover:text-light-100">Behance</a>
           </div>
           <div class="*:block [&_a]:not-last:mb-2">
-            <p class="text-midnight-950 dark:text-light-100 mb-4">About Zaid Al Matrafi:</p>
+            <p class="text-midnight-950 dark:text-light-100 mb-4" data-i18n="footerAboutZaid">About Zaid Al Matrafi:</p>
             <a href="https://x.com/almatrafizaid?s=11" target="_blank" class="text-dimmed hover:text-midnight-950 dark:hover:text-light-100">X.com</a>
             <a href="https://www.linkedin.com/in/zaid-almatrafi-5a9b89275?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="text-dimmed hover:text-midnight-950 dark:hover:text-light-100">LinkedIn</a>
           </div>
         </div>
         <!-- End side -->
       </div>
-      <span class="text-dimmed mt-6 block text-center text-sm">All rights reserved to SAFCSP</span>
+      <span class="text-dimmed mt-6 block text-center text-sm" data-i18n="footerRights">All rights reserved to SAFCSP</span>
     </footer>
     <!-- Footer -->
 
     <script src="./src/js/navbar.js"></script>
     <script src="./src/js/theme.js"></script>
+    <script src="./src/js/language.js"></script>
   </body>
 </html>
