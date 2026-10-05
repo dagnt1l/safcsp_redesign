@@ -821,6 +821,7 @@
     }
   }
   html {
+    overflow-x: clip;
     font-family: var(--font-body);
     &:where(.dark, .dark *) {
       color-scheme: only dark;

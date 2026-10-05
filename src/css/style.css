@@ -8,7 +8,7 @@
   }
 
   html {
-    @apply font-body dark:scheme-only-dark;
+    @apply font-body overflow-x-clip dark:scheme-only-dark;
   }
 
   svg {
