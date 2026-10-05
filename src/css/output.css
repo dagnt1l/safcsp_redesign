@@ -220,11 +220,23 @@
   .top-2\/4 {
     top: calc(2 / 4 * 100%);
   }
+  .top-\[19\.51\%\] {
+    top: 19.51%;
+  }
   .top-\[199\.74px\] {
     top: 199.74px;
   }
+  .right-\[0\] {
+    right: 0;
+  }
+  .right-\[8\.37\%\] {
+    right: 8.37%;
+  }
   .right-\[120\.5px\] {
     right: 120.5px;
+  }
+  .bottom-\[19\.93\%\] {
+    bottom: 19.93%;
   }
   .bottom-\[204\.08px\] {
     bottom: 204.08px;
@@ -234,6 +246,9 @@
   }
   .-left-88\.5 {
     left: calc(var(--spacing) * -88.5);
+  }
+  .-left-\[24\.58\%\] {
+    left: calc(24.58% * -1);
   }
   .left-2 {
     left: calc(var(--spacing) * 2);
@@ -246,6 +261,9 @@
   }
   .left-47\.25 {
     left: calc(var(--spacing) * 47.25);
+  }
+  .left-\[13\.13\%\] {
+    left: 13.13%;
   }
   .-z-10 {
     z-index: calc(10 * -1);
@@ -366,6 +384,9 @@
   }
   .h-32 {
     height: calc(var(--spacing) * 32);
+  }
+  .h-auto {
+    height: auto;
   }
   .w-53 {
     width: calc(var(--spacing) * 53);
@@ -488,20 +509,11 @@
   .bg-midnight-950 {
     background-color: var(--color-midnight-950);
   }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
-  }
   .bg-transparent {
     background-color: transparent;
   }
   .mask-\[url\(\.\.\/\.\.\/public\/logos\/full_logo\.svg\)\] {
     mask-image: url(../../public/logos/full_logo.svg);
-  }
-  .fill-red-50 {
-    fill: var(--color-red-50);
-  }
-  .fill-red-500 {
-    fill: var(--color-red-500);
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
@@ -567,9 +579,6 @@
   }
   .text-midnight-950 {
     color: var(--color-midnight-950);
-  }
-  .text-red-50 {
-    color: var(--color-red-50);
   }
   .underline {
     text-decoration-line: underline;
