@@ -1,0 +1,147 @@
+@layer base {
+  ::selection {
+    @apply bg-primary-500/30 dark:bg-primary-500/10 text-primary-500;
+  }
+
+  body {
+    @apply text-midnight-950 dark:bg-midnight-950 dark:text-light-100 overflow-x-hidden **:leading-[1.2];
+  }
+
+  html {
+    @apply font-body dark:scheme-only-dark;
+  }
+
+  svg {
+    @apply inline-block *:fill-current;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+}
+
+@layer components {
+  .navbar {
+    @apply bg-light-50/40 dark:bg-midnight-950/40 sticky top-0 z-50 container flex items-center gap-7 py-5 backdrop-blur-2xl;
+
+    .title {
+      @apply hover:text-primary-500 text-2xl;
+    }
+
+    .nav-collapse {
+      @apply bg-midnight-950/90 fixed top-full left-0 z-50 hidden w-full gap-3.5 rounded-xs p-4 backdrop-blur-2xl lg:static lg:top-auto lg:z-auto lg:flex lg:w-auto lg:grow lg:rounded-none lg:bg-transparent lg:p-0 lg:backdrop-blur-none;
+
+      &.show {
+        @apply grid!;
+      }
+
+      .nav-list {
+        @apply grid gap-4 lg:flex lg:items-center lg:gap-3.5;
+
+        .nav-link {
+          @apply text-dimmed hover:text-midnight-950 dark:hover:text-light-100 [&.active]:text-primary-500;
+        }
+      }
+    }
+    .nav-toggler {
+      @apply hover:bg-midnight-900/50 ms-auto p-3 lg:hidden [&_svg]:size-6;
+    }
+  }
+
+  button,
+  .button {
+    @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-xs px-3 py-2 leading-[1.2] outline-transparent transition-all select-none [&_svg]:size-4;
+
+    &.sm {
+      @apply gap-1.5 px-2 py-2 text-sm [&_svg]:size-4;
+    }
+
+    &.xs {
+      @apply gap-1.5 px-2 py-2 text-xs [&_svg]:size-3.5;
+    }
+
+    &.primary {
+      @apply bg-primary-500 hover:bg-primary-400 text-primary-950;
+    }
+
+    &.secondary {
+      @apply border-primary-500 bg-primary-500/10 text-primary-500 border-2;
+    }
+  }
+
+  .card {
+    @apply dark:bg-midnight-900/40 shadow-midnight-950/3 bg-light-50/40 mx-auto w-full overflow-hidden rounded-xs shadow-xl dark:shadow-none;
+
+    .card-img {
+      @apply relative h-48 object-cover;
+
+      .logo-hover {
+        @apply absolute top-2/4 left-2/4 w-[164.99px] -translate-2/4 grayscale-100 transition-all group-hover:grayscale-0;
+      }
+    }
+
+    .content {
+      @apply grid gap-3.5 p-5;
+
+      .card-title {
+        @apply block text-lg transition-colors;
+      }
+
+      .card-text {
+        @apply text-dimmed line-clamp-3! block text-xs;
+      }
+    }
+  }
+
+  .hero {
+    @apply relative z-10 container grid min-h-screen items-center lg:flex;
+  }
+
+  .terminal {
+    @apply bg-light-50/40 shadow-midnight-950/3 dark:bg-midnight-900/40 rounded-md mix-blend-plus-lighter shadow-xl dark:shadow-none;
+    /* Heading */
+    .heading {
+      @apply flex items-center p-3;
+
+      /* Title */
+      .title {
+        @apply text-dimmed inline-block w-full text-center text-xs select-none;
+      }
+
+      .action-button {
+        @apply size-3 rounded-full border bg-linear-[315deg] from-[42.5%] to-[132.5%] p-0 shadow-[-2px_-2px_6px_0_rgba(7,7,7,0.10)_inset] hover:brightness-105;
+      }
+
+      .action-button.close {
+        @apply border-error-500 from-error-500 to-error-400;
+      }
+
+      .action-button.minimize {
+        @apply border-warning-500 from-warning-500 to-warning-400;
+      }
+
+      .action-button.full-screen-toggler {
+        @apply border-success-500 from-success-500 to-success-400;
+      }
+    }
+    .content {
+      @apply **:font-terminal grid p-3 pb-5;
+    }
+  }
+
+  .section-title {
+    @apply mb-10 text-center text-4xl;
+  }
+
+  footer {
+    @apply container mt-36 grid gap-6 py-11;
+  }
+}
+
+@utility text-dimmed {
+  @apply text-midnight-500 dark:text-midnight-200;
+}
+
+@utility container {
+  @apply mx-auto max-w-[unset] px-4 md:px-8 lg:px-16 xl:max-w-328;
+}
