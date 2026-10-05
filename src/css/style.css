@@ -4,11 +4,16 @@
   }
 
   body {
-    @apply text-midnight-950 dark:bg-midnight-950 dark:text-light-100 overflow-x-hidden **:leading-[1.2];
+    @apply text-midnight-950 dark:bg-midnight-950 dark:text-light-100 **:leading-[1.2];
+  }
+
+  html,
+  body {
+    overflow-x: clip; max-width: 100%;
   }
 
   html {
-    @apply font-body overflow-x-clip dark:scheme-only-dark;
+    @apply font-body dark:scheme-only-dark;
   }
 
   svg {
