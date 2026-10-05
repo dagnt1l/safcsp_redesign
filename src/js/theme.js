@@ -5,12 +5,11 @@ if(localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchM
     document.documentElement.classList.add('dark');
 }
 
+function setTheme(theme) {
+  document.documentElement.classList.toggle('dark', theme === 'dark')
+  localStorage.setItem('theme', theme)
+}
+
 themeToggler.addEventListener('click', () => {
-  if (document.documentElement.classList.contains('dark')) {
-    document.documentElement.classList.remove('dark')
-    localStorage.setItem('theme', 'light')
-  } else {
-    document.documentElement.classList.add('dark')
-    localStorage.setItem('theme', 'dark')
-  }
+  setTheme(document.documentElement.classList.contains('dark') ? 'light' : 'dark')
 })

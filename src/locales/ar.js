@@ -1,4 +1,5 @@
-{
+window.locales = window.locales || {};
+window.locales.ar = {
   "languageToggle": "English",
   "navHome": "الرئيسية",
   "navAbout": "عن الاتحاد",
@@ -34,4 +35,4 @@
   "footerAboutSaad": "عن سعد الجهني:",
   "footerAboutZaid": "عن زايد المطرفي:",
   "footerRights": "جميع الحقوق محفوظة للاتحاد"
-}
+};

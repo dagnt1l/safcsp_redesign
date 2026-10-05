@@ -1,4 +1,5 @@
-{
+window.locales = window.locales || {};
+window.locales.en = {
   "languageToggle": "عربي",
   "navHome": "Home",
   "navAbout": "About SAFCSP",
@@ -34,4 +35,4 @@
   "footerAboutSaad": "About Saad Al Juhani:",
   "footerAboutZaid": "About Zaid Al Matrafi:",
   "footerRights": "All rights reserved to SAFCSP"
-}
+};
