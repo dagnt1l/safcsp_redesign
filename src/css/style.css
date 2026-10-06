@@ -193,3 +193,94 @@
     animation: none;
   }
 }
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    translate: 0 1.75rem;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    translate: 0 -100%;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes drift {
+  50% {
+    transform: translate3d(2.5rem, 3rem, 0) scale(1.06);
+  }
+}
+
+@keyframes pulse-ring {
+  50% {
+    scale: 1.06;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  header {
+    animation: fade-down 0.6s ease-out both;
+  }
+
+  .js-anim [data-reveal] {
+    opacity: 0;
+  }
+
+  .js-anim [data-reveal].is-visible {
+    animation: reveal-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms) both;
+  }
+
+  .animate-drift {
+    animation: drift 18s ease-in-out infinite;
+  }
+
+  .animate-drift-reverse {
+    animation: drift 22s ease-in-out infinite reverse;
+  }
+
+  .card {
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      background-color 0.3s ease;
+
+    &:hover {
+      transform: translateY(-0.25rem);
+    }
+
+    &:hover .card-img > span > span > span {
+      animation: pulse-ring 1.6s ease-in-out infinite;
+    }
+  }
+
+  button.primary:hover svg {
+    animation: nudge 0.6s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes nudge {
+  to {
+    transform: translateX(0.25rem);
+  }
+}
+
+[dir='rtl'] button.primary:hover svg {
+  animation-name: nudge-rtl;
+}
+
+@keyframes nudge-rtl {
+  to {
+    transform: translateX(-0.25rem);
+  }
+}

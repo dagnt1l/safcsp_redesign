@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/output.css" />
     <title>SAFCSP</title>
+    <script>document.documentElement.classList.add('js-anim');</script>
   </head>
   <body class="relative">
-    <span class="pointer-events-none absolute top-[199.74px] left-47.25 -z-10 hidden overflow-hidden blur-[255.5px] dark:inline-block">
+    <span class="pointer-events-none absolute top-[199.74px] left-47.25 -z-10 animate-drift hidden overflow-hidden blur-[255.5px] dark:inline-block">
       <svg xmlns="http://www.w3.org/2000/svg" width="1356" height="1361" viewBox="0 0 1356 1361" fill="none">
         <path opacity="0.2" d="M104.216 979.399C217.581 780.8 541.513 251.399 541.513 251.399C541.513 251.399 714.05 150.489 795.716 104.635M1475.72 455.899C1470.55 526.399 1416.42 678.599 1241.22 723.399C1022.22 779.399 970.716 830.399 899.716 1006.4C842.916 1147.2 940.716 1227.07 996.716 1249.4" stroke="#1B7383" stroke-width="240" />
       </svg>
     </span>
 
-    <span class="**:stroke-primary-500 **:fill-primary-500! pointer-events-none absolute bottom-[204.08px] -left-88.5 -z-10 hidden overflow-hidden opacity-50 blur-[99.5px] dark:inline-block">
+    <span class="**:stroke-primary-500 **:fill-primary-500! pointer-events-none absolute bottom-[204.08px] -left-88.5 -z-10 animate-drift-reverse hidden overflow-hidden opacity-50 blur-[99.5px] dark:inline-block">
       <svg width="1440" height="1566" viewBox="0 0 1440 1566" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g opacity="0.5">
           <path d="M-345 3.88904L-101.5 247.389C3.92859 215.222 223.557 150.889 258.643 150.889C302.5 150.889 318.474 -0.110962 377.288 219.389C424.34 394.989 527.759 519.222 573.587 559.389" stroke="#1CB9C8" stroke-width="11" />
@@ -64,7 +65,7 @@
     <section class="hero z-10">
       <div class="mx-auto grid max-w-328 justify-center gap-17.5 lg:flex lg:items-center">
         <!-- Texts -->
-        <div class="w-full">
+        <div class="w-full" data-reveal>
           <h1 class="text-4xl font-medium lg:text-5xl" data-i18n="heroTitle">Building the Kingdom's Digital and Aerial Future</h1>
           <p class="text-dimmed mt-2 text-lg lg:text-xl" data-i18n="heroDescription">We empower Saudi talent with world-class skills in cybersecurity, software development, drones, and emerging technologies.</p>
           <button class="primary mt-7">
@@ -76,7 +77,7 @@
         </div>
         <!-- Texts -->
         <!-- Terminal -->
-        <div class="terminal w-full">
+        <div class="terminal w-full" data-reveal style="--reveal-delay: 200ms">
           <div class="heading">
             <div class="flex items-center gap-1.5">
               <button class="action-button close"></button>
@@ -117,8 +118,8 @@
 
     <!-- Safcsp in numbers -->
     <section class="container pt-36">
-      <h1 class="section-title" data-i18n="numbersTitle">SAFCSP in Numbers</h1>
-      <div class="grid grid-cols-1 gap-7 lg:grid-cols-3">
+      <h1 class="section-title" data-reveal data-i18n="numbersTitle">SAFCSP in Numbers</h1>
+      <div class="grid grid-cols-1 gap-7 lg:grid-cols-3" data-reveal-group>
         <div class="card group **:transition-colors">
           <div class="content flex items-center gap-5 p-3.5">
             <span class="dark:bg-midnight-900 bg-light-100 group-hover:bg-primary-500/10 group-hover:text-primary-500 text-dimmed inline-grid size-11 place-content-center rounded-sm [&_svg]:size-7">
@@ -129,7 +130,7 @@
             </span>
             <div class="grid gap-2">
               <span class="card-text text-sm" data-i18n="trainees">Trainees</span>
-              <span class="card-title text-xl">+3,200</span>
+              <span class="card-title text-xl tabular-nums" data-count="3200" data-count-prefix="+">+3,200</span>
             </div>
           </div>
         </div>
@@ -147,7 +148,7 @@
             </span>
             <div class="grid gap-2">
               <span class="card-text text-sm" data-i18n="events">Events</span>
-              <span class="card-title text-xl">+240</span>
+              <span class="card-title text-xl tabular-nums" data-count="240" data-count-prefix="+">+240</span>
             </div>
           </div>
         </div>
@@ -160,7 +161,7 @@
             </span>
             <div class="grid gap-2">
               <span class="card-text text-sm" data-i18n="trainingCourses">Training courses</span>
-              <span class="card-title text-xl">+154</span>
+              <span class="card-title text-xl tabular-nums" data-count="154" data-count-prefix="+">+154</span>
             </div>
           </div>
         </div>
@@ -170,8 +171,8 @@
 
     <!-- Safcsp platforms -->
     <section id="platforms" class="container pt-36">
-      <h1 class="section-title" data-i18n="platformsTitle">SAFCSP platforms</h1>
-      <div class="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-4">
+      <h1 class="section-title" data-reveal data-i18n="platformsTitle">SAFCSP platforms</h1>
+      <div class="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-4" data-reveal-group>
         <div class="card group">
           <div class="card-img z-10 grid">
             <!-- Circles -->
@@ -265,8 +266,8 @@
 
     <!-- Success partners -->
     <section id="partners" class="container pt-36">
-      <h1 class="section-title" data-i18n="partnersTitle">Success partners</h1>
-      <div class="marquee [&_img]:grayscale-100 [&_img]:transition-all [&_img]:hover:grayscale-0">
+      <h1 class="section-title" data-reveal data-i18n="partnersTitle">Success partners</h1>
+      <div data-reveal class="marquee [&_img]:grayscale-100 [&_img]:transition-all [&_img]:hover:grayscale-0">
         <div class="marquee-group">
           <img src="./public/partners/aramco.svg" alt="Aramco" />
           <img src="./public/partners/elm.svg" alt="Elm" />
@@ -291,8 +292,8 @@
 
     <!-- Latest news -->
     <section id="latest-news" class="container pt-36">
-      <h1 class="section-title" data-i18n="newsTitle">Latest news</h1>
-      <div class="border-midnight-950/10 dark:border-light-50/10 grid h-32 w-full place-content-center border border-dashed">
+      <h1 class="section-title" data-reveal data-i18n="newsTitle">Latest news</h1>
+      <div data-reveal class="border-midnight-950/10 dark:border-light-50/10 grid h-32 w-full place-content-center border border-dashed">
         <span class="text-dimmed text-lg" data-i18n="noNews">There’s no news here</span>
       </div>
     </section>
@@ -341,5 +342,6 @@
     <script src="./src/locales/ar.js"></script>
     <script src="./src/js/language.js"></script>
     <script src="./src/js/terminal.js"></script>
+    <script src="./src/js/animations.js"></script>
   </body>
 </html>
