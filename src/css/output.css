@@ -613,40 +613,30 @@
   }
   .group-hover\:bg-primary-500\/10 {
     &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        background-color: color-mix(in srgb, #1cb9c8 10%, transparent);
-        @supports (color: color-mix(in lab, red, red)) {
-          background-color: color-mix(in oklab, var(--color-primary-500) 10%, transparent);
-        }
+      background-color: color-mix(in srgb, #1cb9c8 10%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--color-primary-500) 10%, transparent);
       }
     }
   }
   .group-hover\:text-primary-500 {
     &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        color: var(--color-primary-500);
-      }
+      color: var(--color-primary-500);
     }
   }
   .hover\:bg-midnight-900 {
     &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-midnight-900);
-      }
+      background-color: var(--color-midnight-900);
     }
   }
   .hover\:text-midnight-950 {
     &:hover {
-      @media (hover: hover) {
-        color: var(--color-midnight-950);
-      }
+      color: var(--color-midnight-950);
     }
   }
   .hover\:text-primary-500 {
     &:hover {
-      @media (hover: hover) {
-        color: var(--color-primary-500);
-      }
+      color: var(--color-primary-500);
     }
   }
   .md\:grid-cols-2 {
@@ -752,18 +742,14 @@
   .dark\:hover\:bg-light-200 {
     &:where(.dark, .dark *) {
       &:hover {
-        @media (hover: hover) {
-          background-color: var(--color-light-200);
-        }
+        background-color: var(--color-light-200);
       }
     }
   }
   .dark\:hover\:text-light-100 {
     &:where(.dark, .dark *) {
       &:hover {
-        @media (hover: hover) {
-          color: var(--color-light-100);
-        }
+        color: var(--color-light-100);
       }
     }
   }
@@ -790,10 +776,8 @@
   .\[\&_img\]\:hover\:grayscale-0 {
     & img {
       &:hover {
-        @media (hover: hover) {
-          --tw-grayscale: grayscale(0%);
-          filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-        }
+        --tw-grayscale: grayscale(0%);
+        filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
       }
     }
   }
@@ -910,9 +894,7 @@
       font-size: var(--text-2xl);
       line-height: var(--tw-leading, var(--text-2xl--line-height));
       &:hover {
-        @media (hover: hover) {
-          color: var(--color-primary-500);
-        }
+        color: var(--color-primary-500);
       }
     }
     .nav-collapse {
@@ -993,15 +975,11 @@
             color: var(--color-midnight-200);
           }
           &:hover {
-            @media (hover: hover) {
-              color: var(--color-midnight-950);
-            }
+            color: var(--color-midnight-950);
           }
           &:where(.dark, .dark *) {
             &:hover {
-              @media (hover: hover) {
-                color: var(--color-light-100);
-              }
+              color: var(--color-light-100);
             }
           }
           &.active {
@@ -1014,11 +992,9 @@
       margin-inline-start: auto;
       padding: calc(var(--spacing) * 3);
       &:hover {
-        @media (hover: hover) {
-          background-color: color-mix(in srgb, #f4f4f4 50%, transparent);
-          @supports (color: color-mix(in lab, red, red)) {
-            background-color: color-mix(in oklab, var(--color-light-100) 50%, transparent);
-          }
+        background-color: color-mix(in srgb, #f4f4f4 50%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-light-100) 50%, transparent);
         }
       }
       @media (width >= 64rem) {
@@ -1026,11 +1002,9 @@
       }
       &:where(.dark, .dark *) {
         &:hover {
-          @media (hover: hover) {
-            background-color: color-mix(in srgb, #141414 50%, transparent);
-            @supports (color: color-mix(in lab, red, red)) {
-              background-color: color-mix(in oklab, var(--color-midnight-900) 50%, transparent);
-            }
+          background-color: color-mix(in srgb, #141414 50%, transparent);
+          @supports (color: color-mix(in lab, red, red)) {
+            background-color: color-mix(in oklab, var(--color-midnight-900) 50%, transparent);
           }
         }
       }
@@ -1089,9 +1063,7 @@
       background-color: var(--color-primary-500);
       color: var(--color-primary-950);
       &:hover {
-        @media (hover: hover) {
-          background-color: var(--color-primary-400);
-        }
+        background-color: var(--color-primary-400);
       }
     }
     &.secondary {
@@ -1148,10 +1120,8 @@
         transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
         transition-duration: var(--tw-duration, var(--default-transition-duration));
         &:is(:where(.group):hover *) {
-          @media (hover: hover) {
-            --tw-grayscale: grayscale(0%);
-            filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-          }
+          --tw-grayscale: grayscale(0%);
+          filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
         }
       }
     }
@@ -1276,10 +1246,8 @@
         --tw-shadow: -2px -2px 6px 0 var(--tw-shadow-color, rgba(7,7,7,0.10)) inset;
         box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
         &:hover {
-          @media (hover: hover) {
-            --tw-brightness: brightness(105%);
-            filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-          }
+          --tw-brightness: brightness(105%);
+          filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
         }
       }
       .action-button.close {

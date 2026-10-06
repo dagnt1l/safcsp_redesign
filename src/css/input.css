@@ -5,6 +5,7 @@
 @import "./style.css";
 
 @custom-variant dark (&:where(.dark, .dark *));
+@custom-variant hover (&:hover);
 
 @theme {
   /* Font families */
