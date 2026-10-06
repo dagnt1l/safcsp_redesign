@@ -53,7 +53,7 @@
       }
     }
     .nav-toggler {
-      @apply hover:bg-light-100/50 dark:hover:bg-midnight-900/50 ms-auto p-3 lg:hidden [&_svg]:size-6;
+      @apply hover:bg-light-100/50 dark:hover:bg-midnight-900/42 ms-auto p-3 lg:hidden [&_svg]:size-6;
     }
   }
 
@@ -79,7 +79,7 @@
   }
 
   .card {
-    @apply dark:bg-midnight-900/40 shadow-midnight-950/3 bg-light-50/40 mx-auto w-full overflow-hidden rounded-xs shadow-xl dark:shadow-none;
+    @apply dark:bg-midnight-900/42 shadow-midnight-950/3 bg-light-50/40 mx-auto w-full overflow-hidden rounded-xs shadow-xl dark:shadow-none;
 
     .card-img {
       @apply relative h-48 object-cover;
@@ -107,7 +107,7 @@
   }
 
   .terminal {
-    @apply bg-light-50/40 shadow-midnight-950/3 dark:bg-midnight-900/40 rounded-md mix-blend-plus-lighter shadow-xl dark:shadow-none;
+    @apply bg-light-50/40 shadow-midnight-950/3 dark:bg-midnight-900/42 rounded-md mix-blend-plus-lighter shadow-xl dark:shadow-none;
     /* Heading */
     .heading {
       @apply flex items-center p-3;
