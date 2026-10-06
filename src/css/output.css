@@ -1392,7 +1392,15 @@
     transform: translate3d(2.5rem, 3rem, 0) scale(1.06);
   }
 }
+@keyframes pulse-ring {
+  50% {
+    scale: 1.06;
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
+  .card:hover .card-img > span > span > span {
+    animation: pulse-ring 1.6s ease-in-out infinite;
+  }
   header {
     animation: fade-down 0.6s ease-out both;
   }
