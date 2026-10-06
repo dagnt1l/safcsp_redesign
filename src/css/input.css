@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Changa:wght@200..800&display=swap');
 
-
-@import "tailwindcss";
-@import "./style.css";
+@import 'tailwindcss';
+@import './style.css';
 
 @custom-variant dark (&:where(.dark, .dark *));
 @custom-variant hover (&:hover);
+@custom-variant icon {
+  & svg {
+    @slot;
+  }
+}
 
 @theme {
   /* Font families */
-  --font-title: "Anta", sans-serif;
-  --font-body: "Anta", sans-serif;
-  --font-future: "Anta", sans-serif;
-  --font-terminal: "Cascadia Code", sans-serif;
+  --font-title: 'Anta', sans-serif;
+  --font-body: 'Anta', sans-serif;
+  --font-future: 'Anta', sans-serif;
+  --font-terminal: 'Cascadia Code', sans-serif;
   --font-arabic: 'Changa', sans-serif;
 
   /* Primary */

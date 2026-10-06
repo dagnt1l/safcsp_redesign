@@ -9,7 +9,8 @@
 
   html,
   body {
-    overflow-x: clip; max-width: 100%;
+    overflow-x: clip;
+    max-width: 100%;
   }
 
   html {
@@ -53,20 +54,20 @@
       }
     }
     .nav-toggler {
-      @apply hover:bg-light-100/50 dark:hover:bg-midnight-900/42 ms-auto p-3 lg:hidden [&_svg]:size-6;
+      @apply hover:bg-light-100/50 dark:hover:bg-midnight-900/42 icon:size-6 ms-auto p-3 lg:hidden;
     }
   }
 
   button,
   .button {
-    @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-xs px-3 py-2 leading-[1.2] font-medium outline-transparent transition-all select-none [&_svg]:size-4;
+    @apply icon:size-4 inline-flex cursor-pointer items-center justify-center gap-2 rounded-xs px-3 py-2 leading-[1.2] font-medium outline-transparent transition-all select-none;
 
     &.sm {
-      @apply gap-1.5 px-2 py-2 text-sm [&_svg]:size-4;
+      @apply icon:size-4 gap-1.5 px-2 py-2 text-sm;
     }
 
     &.xs {
-      @apply gap-1.5 px-2 py-2 text-xs [&_svg]:size-3.5;
+      @apply icon:size-3.5 gap-1.5 px-2 py-2 text-xs;
     }
 
     &.primary {

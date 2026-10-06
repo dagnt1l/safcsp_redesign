@@ -1,8 +1,8 @@
 const themeToggler = document.getElementById('theme-toggler')
 const themeStorage = localStorage.getItem('theme')
 
-if(localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)){
-    document.documentElement.classList.add('dark');
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  document.documentElement.classList.add('dark')
 }
 
 function setTheme(theme) {
