@@ -222,12 +222,6 @@
   }
 }
 
-@keyframes pulse-ring {
-  50% {
-    scale: 1.06;
-  }
-}
-
 @media (prefers-reduced-motion: no-preference) {
   header {
     animation: fade-down 0.6s ease-out both;
@@ -247,40 +241,5 @@
 
   .animate-drift-reverse {
     animation: drift 22s ease-in-out infinite reverse;
-  }
-
-  .card {
-    transition:
-      transform 0.3s ease,
-      box-shadow 0.3s ease,
-      background-color 0.3s ease;
-
-    &:hover {
-      transform: translateY(-0.25rem);
-    }
-
-    &:hover .card-img > span > span > span {
-      animation: pulse-ring 1.6s ease-in-out infinite;
-    }
-  }
-
-  button.primary:hover svg {
-    animation: nudge 0.6s ease-in-out infinite alternate;
-  }
-}
-
-@keyframes nudge {
-  to {
-    transform: translateX(0.25rem);
-  }
-}
-
-[dir='rtl'] button.primary:hover svg {
-  animation-name: nudge-rtl;
-}
-
-@keyframes nudge-rtl {
-  to {
-    transform: translateX(-0.25rem);
   }
 }
