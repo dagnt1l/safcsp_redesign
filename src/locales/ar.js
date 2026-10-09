@@ -33,6 +33,6 @@ window.locales.ar = {
   noNews: 'لا توجد أخبار حالياً',
   footerPlatforms: 'المنصات:',
   footerAboutSaad: 'عن سعد الجهني:',
-  footerAboutZaid: 'عن زايد المطرفي:',
+  footerAboutZaid: 'عن زيد المطرفي:',
   footerRights: 'جميع الحقوق محفوظة للاتحاد',
 }
