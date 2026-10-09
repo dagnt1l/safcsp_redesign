@@ -136,6 +136,19 @@
     }
     .content {
       @apply **:font-terminal grid p-3 pb-5;
+
+      .terminal-input-wrapper {
+        @apply relative min-w-0 flex-1;
+      }
+
+      .terminal-ghost {
+        @apply text-midnight-400 pointer-events-none absolute top-1/2 z-0 -translate-y-1/2 whitespace-pre;
+        left: calc(var(--terminal-typed-width, 0px) + 0.25rem);
+      }
+
+      #terminal-input {
+        @apply relative z-10;
+      }
     }
   }
 

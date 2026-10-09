@@ -49,6 +49,7 @@
     --color-light-100: #f4f4f4;
     --color-light-200: #eaeaea;
     --color-midnight-200: #9d9d9d;
+    --color-midnight-400: #616161;
     --color-midnight-500: #515151;
     --color-midnight-900: #141414;
     --color-midnight-950: #070707;
@@ -1282,6 +1283,26 @@
       padding-bottom: calc(var(--spacing) * 5);
       :is(& *) {
         font-family: var(--font-terminal);
+      }
+      .terminal-input-wrapper {
+        position: relative;
+        min-width: calc(var(--spacing) * 0);
+        flex: 1;
+      }
+      .terminal-ghost {
+        pointer-events: none;
+        position: absolute;
+        top: calc(1 / 2 * 100%);
+        z-index: 0;
+        --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+        white-space: pre;
+        color: var(--color-midnight-400);
+        left: calc(var(--terminal-typed-width, 0px) + 0.25rem);
+      }
+      #terminal-input {
+        position: relative;
+        z-index: 10;
       }
     }
   }

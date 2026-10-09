@@ -109,8 +109,11 @@
             </p>
             <button class="dark:bg-light-100 xs dark:hover:bg-light-200 bg-midnight-950 hover:bg-midnight-900 text-light-100 dark:text-midnight-950 font-terminal me-auto mt-3.5" data-i18n="playVideo">Play video</button>
             <div class="mt-5 flex items-center *:text-xs">
-              <span>C:\Users\saad_aljuhani></span>
-              <input id="terminal-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" class="overflow-auto border-none bg-transparent px-1 outline-none [caret-shape:block]" data-i18n-placeholder="terminalInput" />
+              <span dir="ltr">C:\Users\saad_aljuhani></span>
+              <span class="terminal-input-wrapper" dir="ltr">
+                <span id="terminal-ghost" class="terminal-ghost" aria-hidden="true"></span>
+                <input id="terminal-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" class="w-full overflow-auto border-none bg-transparent px-1 outline-none [caret-shape:block]" placeholder="Commands: dark, light, english, arabic" data-i18n-placeholder="terminalInput" />
+              </span>
             </div>
           </div>
         </div>
